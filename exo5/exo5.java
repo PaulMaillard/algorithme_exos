@@ -6,10 +6,8 @@ public class exo5
 {
 	public static void main(String[] args)
 	{
-		String word = "kayas";
+		String word = "beweb";
 		boolean palindrome = false;
-		int nbLetter = 0;
-		String tmp = "";
 		int i = 0;
 		int j = word.length()-1;
 
@@ -21,19 +19,22 @@ public class exo5
 			{
 				j--;
 				i++;
-				if (word.charAt(i) != word.charAt(j))
-				{
-					System.out.println("ce mot n'est pas un palidromme");
-					break;
-				}
-				else
-				{
-					System.out.println("est un palidromme");
-				}
+				palindrome = true;
 			}
 			else
-				System.out.println("n'est pas un palidromme");
-					break;
+			{
+				palindrome = false;
+				break;
+			}
 		}
+		if(palindrome == true)
+		{
+			System.out.println("ce mot est un palindrome");
+		}
+		else
+		{
+			System.out.println("ce mot n'est pas un palindrome");
+		}
+
 	}
 }
