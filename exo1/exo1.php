@@ -2,3 +2,4 @@
 $hello = "hello world";
 
 echo "$hello\n";
+?>
