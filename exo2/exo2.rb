@@ -1,3 +1,7 @@
+#sort descending
+#by fflachet
+#beweb
+
 $tab = [42,8,10,34,94,2,75,29]
 $tmp = 0
 $sorted = false

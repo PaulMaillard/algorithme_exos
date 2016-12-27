@@ -1,3 +1,7 @@
+//sort descending
+//by fflachet
+//beweb
+
 import java.util.Arrays;
 
 public class exo2
