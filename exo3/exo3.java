@@ -17,6 +17,6 @@ public class exo3
 	    		count++;
 	    	}
 	    }
-	System.out.println("le nombre de caractereRecherche est :"+ count);
+	System.out.println("le nombre de "+letter+" est :"+ count);
 	}
 }

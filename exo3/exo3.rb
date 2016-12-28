@@ -2,16 +2,20 @@
 #by fflachet
 #beweb
 
-$word = "anti"
-$carac = "t"
 $result = 0
 $i = 0
 
-	
-while $i < $word.length
-	if $word[$i] == $carac
-		$result+=1
+def countLetter(word,letter)
+	ARGV[0] = $word
+	ARGV[1] = $letter
+	letter = "t"
+	while $i < $word.length-1
+		if $word[$i] == $letter
+			$result+=1
+		end
+	$i+=1
 	end
-$i+=1
+	("le nombre de #{$letter} est : #{$result}")
 end
-print ("le nombre de caractereRecherche est : #{$result}\n")
+
+countLetter(ARGV[0], ARGV[1])

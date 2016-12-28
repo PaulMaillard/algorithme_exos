@@ -25,9 +25,14 @@ function palindrome($word)
 		}
 	}
 	if($palindrome == true)
-		echo "ce mot est un palindrome";
+		echo "ce mot est un palindrome\n";
 	else
-		echo "ce mot n'est pas un palindrome";
+		echo "ce mot n'est pas un palindrome\n";
 }
-palindrome("kayak");
+
+palindrome("beweb");
+
+function countLetter($word)
+	i = 0;
+	nbLetter = 0;
 ?>

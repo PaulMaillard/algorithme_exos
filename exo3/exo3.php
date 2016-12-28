@@ -3,20 +3,26 @@
 // by fflachet
 // beweb
 
-
-$word = "antitt";
-$carac = "t";
 $result = 0;
 $i = 0;
 
-	
-while($i < strlen($word))
+function countLetter($word,$letter)
 {
-	if($word[$i] == $carac)
+	$result = 0;
+	$i = 0;
+	$argv[1] = $word;
+	$argv[2] = $letter;
+
+	while($i < strlen($word))
 	{
-		$result++;
+		if($word[$i] == $letter)
+		{
+			$result++;
+		}
+	$i++;
 	}
-$i++;
+	echo "le nombre de $letter est : $result\n";
 }
-echo "le nombre de caractereRecherche est : $result\n";
+
+countLetter($argv[1], $argv[2])
 ?>
