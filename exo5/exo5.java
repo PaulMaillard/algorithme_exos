@@ -4,10 +4,9 @@
 
 public class exo5
 {
-	public static void main(String[] args)
+	public static void palindrome(String word)
 	{
-		String word = "beweb";
-		boolean palindrome = false;
+		boolean flag = false;
 		int i = 0;
 		int j = word.length()-1;
 
@@ -19,15 +18,15 @@ public class exo5
 			{
 				j--;
 				i++;
-				palindrome = true;
+				flag = true;
 			}
 			else
 			{
-				palindrome = false;
+				flag = false;
 				break;
 			}
 		}
-		if(palindrome == true)
+		if(flag == true)
 		{
 			System.out.println("ce mot est un palindrome");
 		}
@@ -35,6 +34,34 @@ public class exo5
 		{
 			System.out.println("ce mot n'est pas un palindrome");
 		}
+	}
 
+
+	public static void countLetter(String word)
+	{
+		int i = 0;
+		int nbLetter = 0;
+
+
+		System.out.println(word);
+
+		while(i < word.length()-1)
+		{
+			if (word[i]
+			{
+				nbLetter++;
+				i++;
+			}
+			else
+			{
+				i++;
+			}
+		}
+		System.out.println("nombre de lettres alpha : " +nbLetter);
+	}
+	public static void main(String[] args)
+	{
+		palindrome("beweb");
+		countLetter("beweb");
 	}
 }

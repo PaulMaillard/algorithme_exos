@@ -5,7 +5,7 @@
 
 function palindrome($word)
 {
-	$palindrome = false;
+	$flag = false;
 	$i = 0;
 	$j = strlen($word)-1;
 	$argv[1] = $word;
@@ -18,15 +18,15 @@ function palindrome($word)
 		{
 			$j--;
 			$i++;
-			$palindrome = true;
+			$flag = true;
 		}
 		else
 		{
-			$palindrome = false;
+			$flag = false;
 			break;
 		}
 	}
-	if($palindrome == true)
+	if($flag == true)
 		echo "ce mot est un palindrome\n";
 	else
 		echo "ce mot n'est pas un palindrome\n";
@@ -37,6 +37,8 @@ function countLetter($word)
 {
 	$i = 0;
 	$nbLetter = 0;
+
+	echo "$word\n";
 
 	while($i < strlen($word))
 	{
