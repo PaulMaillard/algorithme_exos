@@ -65,8 +65,14 @@ function main($argv)
 		case '2':
 			countLetter($word);
 			break;
+		case '3';
+			echo "Soon...\n";
+			break;
+		case '4':
+			echo "Soon...\n";
+			break;
 		default:
-			echo "1 ou 2 essaie pas autre chose";
+			echo "Try again\n";
 			break;
 	} 
 }
