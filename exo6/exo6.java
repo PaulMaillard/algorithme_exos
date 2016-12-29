@@ -1,4 +1,4 @@
-public class parrot{
+public class exo6{
 
   public static void main(String[] args) {
 
@@ -8,11 +8,13 @@ public class parrot{
     String userInput = "";
 
     while(program_loop == false) {
-      words = readline("What should the parrot say ? ");
+      System.out.print("What should the parrot say ? ");
+      words = System.console().readLine();
       System.out.println(words + "\n");
       choice_loop = true;
       while(choice_loop == true) {
-        userInput = readline("Enter 'R' to restart or 'X' to exit. ");
+        System.out.print("Enter 'R' to restart or 'X' to exit. ");
+        userInput = System.console().readLine();
         if("X".equals(userInput) || "x".equals(userInput)) {
             System.out.println("Goodbye.\n");
             choice_loop = false;
