@@ -1,8 +1,8 @@
 <?php
 //exercices on string
 //functions by fflachet
-//user interfacte by Paul Maillard
-//beweb
+//user interfacte by PaulMaillard
+//beweb lunel
 
 function palindrome($text)
 {
@@ -82,7 +82,7 @@ $smallLoop = false;
 
 while($bigLoop == false){
 	$smallLoop = false;
-	$text = readline("Please enter some text : ");
+	$text = strtolower(readline("Please enter some text : "));
 	echo("What would you like to do with it?\r\n\n");
 	echo("  1. Check if it is a palindrome.\r\n");
 	echo("  2. Count how many letters are in it.\r\n");
@@ -95,14 +95,14 @@ while($bigLoop == false){
 		if($choice == "1"){
 		  palindrome($text);
 			$smallLoop = true;
-			$exit = readline("Enter X to exit or anything else to restart  : ");
+			$exit = strtoupper(readline("Enter X to exit or anything else to restart  : "));
 			if($exit == "X"){
 				$bigLoop = true;
 			}else{}
 		}elseif($choice == "2"){
 			countLetter($text);
 			$smallLoop = true;
-			$exit = readline("Enter X to exit or anything else to restart  : ");
+			$exit = strtoupper(readline("Enter X to exit or anything else to restart  : "));
 			if($exit == "X"){
 				$bigLoop = true;
 			}else{}
@@ -111,14 +111,14 @@ while($bigLoop == false){
 			$charB = readLine("Which letter would you like to replace it with? ");
 			replaceLetter($text,$charA,$charB);
 			$smallLoop = true;
-			$exit = readline("Enter X to exit or anything else to restart  : ");
+			$exit = strtoupper(readline("Enter X to exit or anything else to restart  : "));
 			if($exit == "X"){
 				$bigLoop = true;
 			}else{}
 		}elseif($choice == "4"){
 			cutWord($text);
 			$smallLoop = true;
-			$exit = readline("Enter X to exit or anything else to restart : ");
+			$exit = strtoupper(readline("Enter X to exit or anything else to restart : "));
 			if($exit == "X"){
 				$bigLoop = true;
 			}else{}

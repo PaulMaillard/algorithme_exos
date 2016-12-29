@@ -1,1 +1,2 @@
-puts 'Hello, world !'
+$hello = "hello world"
+puts $hello
