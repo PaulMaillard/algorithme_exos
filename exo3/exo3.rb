@@ -1,27 +1,13 @@
-#Decompte de caractere
-#by Hicham
-#beWeb
 
-#cette algo compte le nombre de t
-$word = "anttttti"
-$carac = "t"
-$resultat = 0
-#initialisation du nombre de "t" a zero
-$i = 0
-#initialisation de l'index donc index 0
+result = 0
+i = 0
+word, char = ARGV
 
-while $i < $word.length
-#tant que index inferieur a la longueur du mot cela exectute le code ci-dessous
-	if $word[$i] == $carac
-#si a l'index ou je me trouve c'est bien un "n" j'incremente de 1
-		$resultat += 1
+while i < word.length
+	if word[i] == char
+		result += 1
 	end
-#fin de ma condition
-$i += 1
-#et je passe a l'index suivant
+i += 1
 end
-#fin de ma condition
 
-print ("le nombre de caractereRecherche est : #{$resultat}\r\n")
-
-# \r =retour chariot et \n = passage a la ligne
+puts ("Le nombre de #{char} est : #{result}")
