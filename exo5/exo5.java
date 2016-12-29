@@ -45,23 +45,74 @@ public class exo5
 
 		System.out.println(word);
 
-		while(i < word.length()-1)
+		for( i = 0; i < word.length(); i++ )
 		{
-			if (word[i]
-			{
-				nbLetter++;
-				i++;
-			}
-			else
-			{
-				i++;
+    		char temp = word.charAt(i);
+
+    		if(Character.isLetter(temp))
+    		{	
+    			nbLetter++;
 			}
 		}
 		System.out.println("nombre de lettres alpha : " +nbLetter);
 	}
+
+	public static void replaceLetter(String word,String charA,String charB)
+	{
+		int i = 0;
+
+		System.out.println(word);
+
+		while(i < word.length())
+		{
+			if(word.charAt(i) == charA.charAt(0))
+			{
+				 word = word.substring(0,i)+charB+word.substring(i+1);
+			}
+			i++;
+		}
+		System.out.println("la lettre "+charA+" est remplacé par la lettre "+charB); 
+		System.out.println("resulat : "+word);
+	}
+
+	public static void cutText(String text)
+	{
+		int i = 0;
+
+		System.out.println(text);
+
+		while(i < text.length())
+		{
+			if(text.charAt(i) == ' ')
+			{
+				text = text.substring(0,i)+'\n'+text.substring(i+1);
+			}
+			i++;
+		}
+		System.out.println(text);
+	}
+
 	public static void main(String[] args)
 	{
-		palindrome("beweb");
-		countLetter("beweb");
+		String word = args[0];
+		switch(args[1])
+		{
+			case "1":
+				palindrome(word);
+				break;
+			case "2":
+				countLetter(word);
+				break;
+			case "3":
+				replaceLetter(word,args[2],args[3]);
+				break;
+			case "4":
+				cutText(word);
+				break;
+			default:
+				System.out.println("Try again");
+				break;
+		} 
+		
 	}
 }
