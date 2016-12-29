@@ -6,18 +6,18 @@
 
 def countLetter(word,letter)
 
-	$result = 0
-	$i = 0
-	ARGV[0] = $word
-	ARGV[1] = $letter
+	result = 0
+	i = 0
+	word = ARGV[0]
+	letter = ARGV[1]
 
-	while $i < $word.length.-1
-		if $word[$i] == $letter
-			$result+=1
+	while i < word.length
+		if word[i] == letter
+			result+=1
 		end
-	$i+=1
+	i+=1
 	end
-	("le nombre de #{$letter} est : #{$result}")
+	print "le nombre de #{letter} est : #{result}\n"
 end
 
 countLetter(ARGV[0], ARGV[1])
