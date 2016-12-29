@@ -2,14 +2,16 @@
 #by fflachet
 #beweb
 
-$result = 0
-$i = 0
+
 
 def countLetter(word,letter)
+
+	$result = 0
+	$i = 0
 	ARGV[0] = $word
 	ARGV[1] = $letter
-	letter = "t"
-	while $i < $word.length-1
+
+	while $i < $word.length.-1
 		if $word[$i] == $letter
 			$result+=1
 		end

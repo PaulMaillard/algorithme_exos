@@ -56,6 +56,41 @@ function countLetter($word)
 
 }
 
+function replaceLetter($word,$charA,$charB)
+{
+	$i = 0;
+
+	echo "$word\n";
+
+	while($i < strlen($word))
+	{
+		if($word[$i] == $charA)
+		{
+			$word[$i] = $charB;
+		}
+		$i++;
+	}
+	echo "la lettre $charA est remplacé par la lettre $charB\n resulat : $word\n";
+
+}
+
+function cutWord($text)
+{
+	$i = 0;
+	$space = " "; 
+	echo "$text\n";
+
+	while($i < strlen($text))
+	{
+		if ($text[$i] == $space) 
+		{
+			$text[$i] = "\n";
+		}
+		$i++;
+	}
+	echo "$text\n";
+}
+
 function main($argv)
 {
 	$word = $argv[1];
@@ -68,10 +103,10 @@ function main($argv)
 			countLetter($word);
 			break;
 		case '3';
-			echo "Soon...\n";
+			replaceLetter($word,$argv[3],$argv[4]);
 			break;
 		case '4':
-			echo "Soon...\n";
+			cutWord($word);
 			break;
 		default:
 			echo "Try again\n";

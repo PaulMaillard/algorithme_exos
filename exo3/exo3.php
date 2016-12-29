@@ -13,6 +13,8 @@ function countLetter($word,$letter)
 	$argv[1] = $word;
 	$argv[2] = $letter;
 
+	echo "$word\n";
+
 	while($i < strlen($word))
 	{
 		if($word[$i] == $letter)
