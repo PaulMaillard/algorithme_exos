@@ -8,7 +8,6 @@ function palindrome($word)
 	$flag = false;
 	$i = 0;
 	$j = strlen($word)-1;
-	$argv[1] = $word;
 
 	echo "$word\n";
 
@@ -102,7 +101,7 @@ function main($argv)
 		case '2':
 			countLetter($word);
 			break;
-		case '3';
+		case '3':
 			replaceLetter($word,$argv[3],$argv[4]);
 			break;
 		case '4':
