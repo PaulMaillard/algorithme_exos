@@ -40,7 +40,7 @@ function palindrome($text)
 		echo("This text is not a palindrome.\n\n");
 }
 
-//this function couts the alphabetic characters in a string
+//this function counts the alphabetic characters in a string
 function countLetter($text)
 {
 	$i = 0;
@@ -83,7 +83,7 @@ function replaceLetter($text,$charA,$charB)
 	echo("The letter $charA was replaced by the letter $charB\nResult : $text\n\n");
 }
 
-//that fuction sperarates each word composing a sentence line by line
+//that function sperarates each word composing a sentence line by line
 function cutWord($text)
 {
 	$i = 0;
