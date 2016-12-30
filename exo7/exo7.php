@@ -12,7 +12,7 @@ function palindrome($text)
 	$i = 0;
 //the variable j will designate the next-to-last index of the word (its last letter).
 	$j = strlen($text)-1;
-//the fuction will loop as long as the variable i hasn't been incremented to the full length of the word.
+//the function will loop as long as the variable i hasn't been incremented to the full length of the word.
 	while ($i < strlen($text))
 	{
 //as long as the index i and the index j are the same letter, the word is a palindrome.
@@ -22,7 +22,7 @@ function palindrome($text)
 //it moves i forward and j backwards to check the next two letters.
 			$j--;
 			$i++;
-//if the fuction has gone through the entierty of the word whithout getting any mismatches,
+//if the function has gone through the entierty of the word whithout getting any mismatches,
 //then the flag variable will end up true.
 			$flag = true;
 		}
@@ -45,7 +45,7 @@ function countLetter($text)
 {
 	$i = 0;
 	$nbLetter = 0;
-//the fuction will loop as long as the variable i hasn't been incremented to the full length of the text.
+//the function will loop as long as the variable i hasn't been incremented to the full length of the text.
 	while($i < strlen($text))
 	{
 //the fuction will only increment the variable couting the number of letters
@@ -56,7 +56,7 @@ function countLetter($text)
 			$i++;
 		}
 //if the character of the current index isn't alphabetic,
-//the fuction simply moves to the next character.
+//the function simply moves to the next character.
 		else
 		{
 			$i++;
@@ -69,10 +69,10 @@ function countLetter($text)
 function replaceLetter($text,$charA,$charB)
 {
 	$i = 0;
-//the fuction will loop as long as the variable i hasn't been incremented to the full length of the text.
+//the function will loop as long as the variable i hasn't been incremented to the full length of the text.
 	while($i < strlen($text))
 	{
-//each time the fiction comes by a character A
+//each time the function comes by a character A
 		if($text[$i] == $charA)
 		{
 //it replaces it by a character B.
@@ -88,7 +88,7 @@ function cutWord($text)
 {
 	$i = 0;
 	$space = " ";
-//the fuction will loop as long as the variable i hasn't been incremented to the full length of the text.
+//the function will loop as long as the variable i hasn't been incremented to the full length of the text.
 	while($i < strlen($text))
 	{
 //if the variable encounters a space, it replaces it with a line break.
@@ -125,7 +125,7 @@ while($bigLoop == false){
 
 //the user enters the small loop.
 	while($smallLoop == false){
-//if the user makes the first choice, the palindrome fuction is executed with the variable text as an argument.
+//if the user makes the first choice, the palindrome function is executed with the variable text as an argument.
 		if($choice == "1"){
 		  palindrome($text);
 //since the user entered a valid number, the small loop is deactivated.
@@ -137,7 +137,7 @@ while($bigLoop == false){
 //the big loop is deactivated, and the program closes.
 				$bigLoop = true;
 			}else{}
-//if the user makes the second choice, the countLetter fuction is executed with the variable text as an argument.
+//if the user makes the second choice, the countLetter function is executed with the variable text as an argument.
 		}elseif($choice == "2"){
 			countLetter($text);
 //since the user entered a valid number, the small loop is deactivated.
@@ -163,7 +163,7 @@ while($bigLoop == false){
 //the big loop is deactivated, and the program closes.
 				$bigLoop = true;
 			}else{}
-//if the user makes the fourth choice, the cutWord fuction is executed with the variable text as an argument.
+//if the user makes the fourth choice, the cutWord function is executed with the variable text as an argument.
 		}elseif($choice == "4"){
 			cutWord($text);
 //since the user entered a valid number, the small loop is deactivated.
