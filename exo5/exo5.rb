@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-
-mots = ""
-print "Propose un mot; je te dirai si c'est un palindrome ! : \n\r"
-mots = gets.chomp
- i = 0 
- j = mots.length-1 
- while i < (mots.length)/2
-     
-     if mots[i] == mots[j]
-         i +=1
-         j -=1
-        else puts "non"
-            exit        
-     end 
-    
- end
- puts "oui"
-=======
 #exercises on string
 #by fflachet
 #beweb
@@ -28,7 +9,7 @@ def palindrome(word)
 
 	print "#{word}\n"
 
-	while i < word.length	 
+	while i < word.length
 		if word[i] == word[j]
 			j-=1
 			i+=1
@@ -62,19 +43,19 @@ def countLetter(word)
     	j= 0
     	i+=1
 	end
-	print "#{nbLetter}\n"
+	print "Nombre de lettres alpha : #{nbLetter}\n"
 end
 
 def replaceLetter(word, charA, charB)
 	i = 0
-	
+
 	print "#{word}\n"
 
 	while i < word.length
 		if word[i] == charA
 			word2 = word.length - i
 			word = word[0..i-1]+"#{charB}"+word[i+1,word2]
-			print 
+			print
 
 		end
 		i+=1
@@ -84,11 +65,11 @@ end
 
 def cutWord(text)
 	i = 0
-	space = " " 
+	space = " "
 	print "#{text}\n"
 
 	while i < text.length
-		if text[i] == space 
+		if text[i] == space
 			text[i] = "\n"
 		end
 		i+=1
@@ -104,7 +85,7 @@ def main(word)
 			palindrome(word)
 		when "2"
 			countLetter(word)
-		when "3" 
+		when "3"
 			replaceLetter(word, args[2], args[3])
 		when "4"
 			cutWord(word)
@@ -114,4 +95,3 @@ def main(word)
 end
 $w = ARGV;
 main(ARGV)
->>>>>>> c2097e0050c811a3ee95d55f83bdd253bcb21201
