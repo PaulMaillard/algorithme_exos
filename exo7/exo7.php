@@ -1,7 +1,7 @@
 <?php
 //exercices on string
 //functions by fflachet
-//user interfacte by PaulMaillard
+//user interface by PaulMaillard
 //beweb lunel
 
 function palindrome($text)
@@ -95,14 +95,14 @@ while($bigLoop == false){
 		if($choice == "1"){
 		  palindrome($text);
 			$smallLoop = true;
-			$exit = strtoupper(readline("Enter X to exit or anything else to restart  : "));
+			$exit = strtoupper(readline("Enter X to exit or anything else to restart : "));
 			if($exit == "X"){
 				$bigLoop = true;
 			}else{}
 		}elseif($choice == "2"){
 			countLetter($text);
 			$smallLoop = true;
-			$exit = strtoupper(readline("Enter X to exit or anything else to restart  : "));
+			$exit = strtoupper(readline("Enter X to exit or anything else to restart : "));
 			if($exit == "X"){
 				$bigLoop = true;
 			}else{}
@@ -111,7 +111,7 @@ while($bigLoop == false){
 			$charB = readLine("Which letter would you like to replace it with? ");
 			replaceLetter($text,$charA,$charB);
 			$smallLoop = true;
-			$exit = strtoupper(readline("Enter X to exit or anything else to restart  : "));
+			$exit = strtoupper(readline("Enter X to exit or anything else to restart : "));
 			if($exit == "X"){
 				$bigLoop = true;
 			}else{}
