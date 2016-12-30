@@ -48,12 +48,15 @@ end
 
 def replaceLetter(word, charA, charB)
 	i = 0
-	j = i
+	
 	print "#{word}\n"
 
 	while i < word.length
 		if word[i] == charA
-			word = word[i]+"#{charB}"+word[i];
+			word2 = word.length - i
+			word = word[0..i-1]+"#{charB}"+word[i+1,word2]
+			print 
+
 		end
 		i+=1
 	end
@@ -76,13 +79,13 @@ end
 
 def main(word)
 	args = ARGV.map(&:dup)
-	word = ARGV[0]
+	word = word[0]
 	case ARGV[1]
 		when "1"
 			palindrome(word)
 		when "2"
 			countLetter(word)
-		when "3"
+		when "3" 
 			replaceLetter(word, args[2], args[3])
 		when "4"
 			cutWord(word)
@@ -90,4 +93,5 @@ def main(word)
 			print "Try again\n"
 	end
 end
+$w = ARGV;
 main(ARGV)
