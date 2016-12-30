@@ -74,7 +74,8 @@ Reprendre l’exercice 5 avec les interactions, l’utilisateur doit :
 
 Triangle de pascal dynamique.
 
-Reprendre l’exercice 4 avec un affichage « dynamique » du triangle selon les choix de l’utilisateur. Peut choisir de dessiner un triangle en choisissant la hauteur et le caractère à afficher
+Reprendre l’exercice 4 avec un affichage « dynamique » du triangle selon les choix de l’utilisateur. 
+Peut choisir de dessiner un triangle en choisissant la hauteur et le caractère à afficher
 
 **Pour exécuter les fichiers :**
 
@@ -86,4 +87,5 @@ Reprendre l’exercice 4 avec un affichage « dynamique » du triangle selon les
 - Pour PHP : Tapez la commande « php exo1.php » 
 - Pour Python : Tapez la commande « python exo1.py »
 - Pour RUBY : Tapez la commande « ruby exo1.rb »
+
 Si le programme nécessite une argument (ex : exo3) Tapez cet argument après le nom du programme.
